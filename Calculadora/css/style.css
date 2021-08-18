@@ -1,0 +1,92 @@
+﻿.calc-1 {
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    height: 490px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    background-color: #575757;
+    padding-top: 5px;
+}
+
+.resultado {
+    border: 1px solid #000000;
+    border-radius: 15px;
+    height: 100px;    
+    margin: 50px 15px 0px 15px;
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    padding-top: 10px;
+    direction:rtl;
+}
+
+.teclado-1 {
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 90%;    
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.teclado-2 {       
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.boton {
+    z-index: 0;
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    font-weight: 600;
+    font-size: 20px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+
+.boton:hover {
+    background-color: #505051;
+    box-shadow: 0px 0px 30px 0px #FFFFFF;
+}
+
+.txt-resultado {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: right;
+    border-radius: 15px;
+    width: 95%;
+    border: none;
+    max-width: 95%;
+}
+
+.solar {
+    margin-top: 8px;
+    border: 3px solid #843131;
+    box-shadow: 0px 0px 10px 0px #000000;
+    background-color: #8E4949;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    margin-right: 20px;
+    float: right;
+    color: #dc8050;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.solar-2 {
+    border: 2px solid #843131;
+    width: 10%;
+    height: 24px;
+}
+
+.guion-1 {
+    margin-top: -5px;
+}
+
+.guion-2 {
+    margin-top: -32px;
+}
