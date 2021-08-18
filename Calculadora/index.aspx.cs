@@ -18,6 +18,7 @@ namespace Calculadora
             if(!IsPostBack)
             {
                 txtResultado.Text = "0";
+                txtMiniatura.Text = "";
             }           
         }
 
@@ -26,11 +27,13 @@ namespace Calculadora
             if(txtResultado.Text == "0")
             {
                 txtResultado.Text = "1";
+                txtMiniatura.Text = "1";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "1";
+                txtMiniatura.Text = number + "1";
             }
         }
 
@@ -39,11 +42,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "2";
+                txtMiniatura.Text = "2";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "2";
+                txtMiniatura.Text = number + "2";
             }
             
         }
@@ -53,11 +58,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "3";
+                txtMiniatura.Text = "3";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "3";
+                txtMiniatura.Text = number + "3";
             }
         }
 
@@ -66,11 +73,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "4";
+                txtMiniatura.Text = "4";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "4";
+                txtMiniatura.Text = number + "4";
             }
         }
 
@@ -79,11 +88,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "5";
+                txtMiniatura.Text = "5";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "5";
+                txtMiniatura.Text = number + "5";
             }
         }
 
@@ -92,11 +103,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "6";
+                txtMiniatura.Text = "6";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "6";
+                txtMiniatura.Text = number + "6";
             }
         }
 
@@ -105,11 +118,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "7";
+                txtMiniatura.Text = "7";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "7";
+                txtMiniatura.Text = number + "7";
             }
         }
 
@@ -118,11 +133,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "8";
+                txtMiniatura.Text = "8";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "8";
+                txtMiniatura.Text = number + "8";
             }
         }
 
@@ -131,11 +148,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "9";
+                txtMiniatura.Text = "9";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "9";
+                txtMiniatura.Text = number + "9";
             }
         }
 
@@ -144,11 +163,13 @@ namespace Calculadora
             if (txtResultado.Text == "0")
             {
                 txtResultado.Text = "0";
+                txtMiniatura.Text = "0";
             }
             else
             {
                 string number = txtResultado.Text;
                 txtResultado.Text = number + "0";
+                txtMiniatura.Text = number + "0";
             }
         }
 
@@ -156,7 +177,7 @@ namespace Calculadora
         {
             resultado2 = Convert.ToInt64(txtResultado.Text);
             signo = "sumar";
-            txtResultado.Text = "0";
+            txtResultado.Text = "";            
         }
 
         protected void btnIgual_Click(object sender, EventArgs e)

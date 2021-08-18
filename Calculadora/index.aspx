@@ -16,7 +16,8 @@
                     </div>
                 </div>
             </div>
-            <div class="resultado">                
+            <div class="resultado"> 
+                <asp:TextBox ID="txtMiniatura" runat="server" CssClass="txt-miniatura" />
                 <asp:TextBox ID="txtResultado" runat="server" CssClass="txt-resultado" />
             </div>
             <div class="teclado-1">

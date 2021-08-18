@@ -15,6 +15,15 @@ namespace Calculadora
     {
 
         /// <summary>
+        /// Control txtMiniatura.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMiniatura;
+
+        /// <summary>
         /// Control txtResultado.
         /// </summary>
         /// <remarks>
