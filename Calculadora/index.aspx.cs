@@ -176,15 +176,19 @@ namespace Calculadora
         protected void btnSumar_Click(object sender, EventArgs e)
         {
             resultado2 = Convert.ToInt64(txtResultado.Text);
+            Session.Add("resultado2", resultado2);
             signo = "sumar";
+            Session.Add("signo", signo);
             txtResultado.Text = "";            
         }
 
         protected void btnIgual_Click(object sender, EventArgs e)
         {
+            signo = Convert.ToString(Session["signo"]);
+
             if (signo == "sumar")
             {
-                txtResultado.Text = Convert.ToString(resultado2 + Convert.ToInt64(txtResultado.Text));
+                txtResultado.Text = Convert.ToString(((long)Session["resultado2"]) + Convert.ToInt64(txtResultado.Text));
             }
             else
             {
