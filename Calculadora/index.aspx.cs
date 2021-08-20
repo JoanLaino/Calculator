@@ -190,10 +190,79 @@ namespace Calculadora
             {
                 txtResultado.Text = Convert.ToString(((long)Session["resultado2"]) + Convert.ToInt64(txtResultado.Text));
             }
+            else if (signo == "restar")
+            {
+                txtResultado.Text = Convert.ToString(((long)Session["resultado2"]) - Convert.ToInt64(txtResultado.Text));
+            }
+            else if (signo == "multiplicar")
+            {
+                txtResultado.Text = Convert.ToString(((long)Session["resultado2"]) * Convert.ToInt64(txtResultado.Text));
+            }
+            else if (signo == "dividir")
+            {
+                txtResultado.Text = Convert.ToString(((long)Session["resultado2"]) / Convert.ToInt64(txtResultado.Text));
+            }
             else
             {
-                txtResultado.Text = txtResultado.Text + "hola";
+                txtResultado.Text = "Syntax Error";
             }
+        }
+
+        protected void btnRestar_Click(object sender, EventArgs e)
+        {
+            resultado2 = Convert.ToInt64(txtResultado.Text);
+            Session.Add("resultado2", resultado2);
+            signo = "restar";
+            Session.Add("signo", signo);
+            txtResultado.Text = "";
+        }
+
+        protected void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            resultado2 = Convert.ToInt64(txtResultado.Text);
+            Session.Add("resultado2", resultado2);
+            signo = "multiplicar";
+            Session.Add("signo", signo);
+            txtResultado.Text = "";
+        }
+
+        protected void btnDividir_Click(object sender, EventArgs e)
+        {
+            resultado2 = Convert.ToInt64(txtResultado.Text);
+            Session.Add("resultado2", resultado2);
+            signo = "dividir";
+            Session.Add("signo", signo);
+            txtResultado.Text = "";
+        }
+
+        protected void btnParentesisIzquierdo_Click(object sender, EventArgs e)
+        {
+            //if (txtResultado.Text == "0")
+            //{
+            //    txtResultado.Text = "(";
+            //    txtMiniatura.Text = "(";
+            //}
+            //else
+            //{
+            //    string number = txtResultado.Text;
+            //    txtResultado.Text = number + " (";
+            //    txtMiniatura.Text = number + " (";
+            //}            
+        }
+
+        protected void btnParentesisDerecho_Click(object sender, EventArgs e)
+        {
+            //if (txtResultado.Text == "0")
+            //{
+            //    txtResultado.Text = ")";
+            //    txtMiniatura.Text = ")";
+            //}
+            //else
+            //{
+            //    string number = txtResultado.Text;
+            //    txtResultado.Text = number + " )";
+            //    txtMiniatura.Text = number + " )";
+            //}
         }
     }
 }

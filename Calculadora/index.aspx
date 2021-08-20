@@ -22,13 +22,13 @@
             </div>
             <div class="teclado-1">
                   <div class="teclado-2">                  
-                       <asp:Button ID="btnParentesisIzquierdo" runat="server" Text="(" CssClass="boton"/>
+                       <asp:Button ID="btnParentesisIzquierdo" runat="server" Text="(" CssClass="boton" OnClick="btnParentesisIzquierdo_Click"/>
 
-                      <asp:Button ID="btnParentesisDerecho" runat="server" Text=")" CssClass="boton"/>
+                      <asp:Button ID="btnParentesisDerecho" runat="server" Text=")" CssClass="boton" OnClick="btnParentesisDerecho_Click"/>
 
                       <asp:Button ID="btnPorciento" runat="server" Text="%" CssClass="boton"/>
 
-                      <asp:Button ID="btnDividir" runat="server" Text="÷" CssClass="boton"/> 
+                      <asp:Button ID="btnDividir" runat="server" Text="÷" CssClass="boton" OnClick="btnDividir_Click"/> 
                   </div>
                     <div class="teclado-2">
                         <asp:Button ID="btnSiete" runat="server" Text="7" CssClass="boton" OnClick="btnSiete_Click"/> 
@@ -37,7 +37,7 @@
 
                         <asp:Button ID="btnNueve" runat="server" Text="9" CssClass="boton" OnClick="btnNueve_Click"/> 
 
-                        <asp:Button ID="btnMultiplicar" runat="server" Text="x" CssClass="boton"/>                         
+                        <asp:Button ID="btnMultiplicar" runat="server" Text="x" CssClass="boton" OnClick="btnMultiplicar_Click"/>                         
                     </div>
                     <div class="teclado-2">
                         <asp:Button ID="btnCuatro" runat="server" Text="4" CssClass="boton" OnClick="btnCuatro_Click"/>  
@@ -46,7 +46,7 @@
 
                         <asp:Button ID="btnSeis" runat="server" Text="6" CssClass="boton" OnClick="btnSeis_Click"/>  
 
-                        <asp:Button ID="btnRestar" runat="server" Text="-" CssClass="boton"/>                        
+                        <asp:Button ID="btnRestar" runat="server" Text="-" CssClass="boton" OnClick="btnRestar_Click"/>                        
                     </div>
                     <div class="teclado-2">
                         <asp:Button ID="btnUno" runat="server" Text="1" CssClass="boton" OnClick="btnUno_Click"/>  
