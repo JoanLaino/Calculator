@@ -16,11 +16,21 @@
                     </div>
                 </div>
             </div>
+            
             <div class="resultado"> 
                 <asp:TextBox ID="txtMiniatura" runat="server" CssClass="txt-miniatura" />
                 <asp:TextBox ID="txtResultado" runat="server" CssClass="txt-resultado" />
             </div>
             <div class="teclado-1">
+                  <div class="teclado-3">
+                      <div class="marca-gral">
+                          <p class="marca">Laino's<span class="marca-registrada">®</span></p>
+                      </div>
+
+                      <asp:Button ID="btnCE" runat="server" Text="CE"  CssClass="boton" OnClick="btnCE_Click" />
+
+                      <asp:Button ID="btnX" runat="server" Text="<="  CssClass="boton" OnClick="btnX_Click" />
+                  </div>
                   <div class="teclado-2">                  
                        <asp:Button ID="btnParentesisIzquierdo" runat="server" Text="(" CssClass="boton" OnClick="btnParentesisIzquierdo_Click"/>
 
